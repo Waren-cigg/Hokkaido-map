@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc63dd94ea6d8c6dac24fd377e055f7a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fc63dd94ea6d8c6dac24fd377e055f7a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fc63dd94ea6d8c6dac24fd377e055f7a = L.map(
+                "map_fc63dd94ea6d8c6dac24fd377e055f7a",
+                {
+                    center: [43.6978320722872, 142.5488037593341],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ce62f6a0ce94eabbdf650d1a129d70e3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ce62f6a0ce94eabbdf650d1a129d70e3.addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var marker_8a99287da123f030372659877f06f02b = L.marker(
+                [43.20365796770666, 141.87796318412873],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_d21f0936e877d67f1eb59d7c246142a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#70ef3c",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_361557546623fed054d05a02cf834981 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_544bce43b57b32f47d4a1121f1d6b0b2 = $(`<div id="html_544bce43b57b32f47d4a1121f1d6b0b2" style="width: 100.0%; height: 100.0%;"> <h4>Sorachi</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Yubari-shi -48.56% de población<br> Hospital: Nanporo choritsu clinics 28.7 km  <br> Universidad: Hokkaido Information University 38 km  </li>  <li>Utashinai-shi -44.13% de población</li>  <li>Kamisunagawa-cho -43.05% de población</li> </ol> </div>`)[0];
+                popup_361557546623fed054d05a02cf834981.setContent(html_544bce43b57b32f47d4a1121f1d6b0b2);
+            
+        
+
+        marker_8a99287da123f030372659877f06f02b.bindPopup(popup_361557546623fed054d05a02cf834981)
+        ;
+
+        
+    
+    
+                marker_8a99287da123f030372659877f06f02b.setIcon(icon_d21f0936e877d67f1eb59d7c246142a2);
+            
+    
+            var marker_a85f64d5625bc2d61e5228aec9f51743 = L.marker(
+                [43.09476911574593, 141.33998520991602],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_7d648f78468e0197e40b45bbacc2783a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#c5ffad",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb0bfa734bfe0b20aee99d6712cabc82 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_7aed7ef96881d682f2232ad84e5a116e = $(`<div id="html_7aed7ef96881d682f2232ad84e5a116e" style="width: 100.0%; height: 100.0%;"> <h4>Ishikari</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Shinshinotsu-mura -22.22% de población<br> Hospital: Ebetsu city hospital 16.5 km  <br> Universidad: Health Sciences University of Hokkaido 7.8 km </li>  <li>Tobetsu-cho -20.34% de población</li>  <li>Sapporo-shi Minami-ku -9.44% de población</li> </ol> </div>`)[0];
+                popup_fb0bfa734bfe0b20aee99d6712cabc82.setContent(html_7aed7ef96881d682f2232ad84e5a116e);
+            
+        
+
+        marker_a85f64d5625bc2d61e5228aec9f51743.bindPopup(popup_fb0bfa734bfe0b20aee99d6712cabc82)
+        ;
+
+        
+    
+    
+                marker_a85f64d5625bc2d61e5228aec9f51743.setIcon(icon_7d648f78468e0197e40b45bbacc2783a);
+            
+    
+            var marker_31b9648087ee992857ac4be0af825144 = L.marker(
+                [42.906138920515176, 140.77974591857833],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_5ec111fd5c9907f3aaea586a40d9d61c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#8c52ff",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e14103036a0c8f04f6dbc545ffc9754b = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_4770aa08adebf2613f6545a32d95f6db = $(`<div id="html_4770aa08adebf2613f6545a32d95f6db" style="width: 100.0%; height: 100.0%;"> <h4>Shiribeshi</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Shakotan-cho -40.46% de población<br> Hospital: Otaru emergency room especially after hours 33.9 km  <br> Universidad: Otaru University of Commerce 31.8 km  </li>  <li>Shimamaki-mura -34.31% de población</li>  <li>Furubira-cho -33.56% de población</li> </ol> </div>`)[0];
+                popup_e14103036a0c8f04f6dbc545ffc9754b.setContent(html_4770aa08adebf2613f6545a32d95f6db);
+            
+        
+
+        marker_31b9648087ee992857ac4be0af825144.bindPopup(popup_e14103036a0c8f04f6dbc545ffc9754b)
+        ;
+
+        
+    
+    
+                marker_31b9648087ee992857ac4be0af825144.setIcon(icon_5ec111fd5c9907f3aaea586a40d9d61c);
+            
+    
+            var marker_1cc702fd3e3f3c3010d98ac252ba1eb9 = L.marker(
+                [42.331378397007775, 141.03845662558248],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_49cbc357c7d93e1a5b4814443b332650 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#ff5757",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd6c9e51b8f878b68415d0e97484c920 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_a38a949aae412d79547f85968c5abdf8 = $(`<div id="html_a38a949aae412d79547f85968c5abdf8" style="width: 100.0%; height: 100.0%;"> <h4>Iburi</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Sobetsu-cho -27.32% de población<br> Hospital: Iryo hojin shadan yamatokai sankei hospital 6.5 km <br> Universidad: Muroran Institute of Technology 22.5 km </li>  <li>Mukawa-cho -26.56% de población</li>  <li>Shiraoi-cho -24.74% de población</li> </ol> </div>`)[0];
+                popup_dd6c9e51b8f878b68415d0e97484c920.setContent(html_a38a949aae412d79547f85968c5abdf8);
+            
+        
+
+        marker_1cc702fd3e3f3c3010d98ac252ba1eb9.bindPopup(popup_dd6c9e51b8f878b68415d0e97484c920)
+        ;
+
+        
+    
+    
+                marker_1cc702fd3e3f3c3010d98ac252ba1eb9.setIcon(icon_49cbc357c7d93e1a5b4814443b332650);
+            
+    
+            var marker_ea74365a34b49b1181f1957ce02dd6aa = L.marker(
+                [42.19825720042333, 142.65400301382397],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_13fdcc2ebe06b6576c5e49c5be25816e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#f79090",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de13eccccce119ec2f29ac2289b55bfa = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_fa3e0b3fe600f064e5e534f187c24ef9 = $(`<div id="html_fa3e0b3fe600f064e5e534f187c24ef9" style="width: 100.0%; height: 100.0%;"> <h4>Hidaka</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Erimo-cho -30.94% de población<br> Hospital: Hokuto hospital 94.2 km  <br> Universidad: Obihiro University of Agriculture and Veterinary Medicine 93.8 km </li>  <li>Samani-cho -28.33% de población</li>  <li>Hidaka-cho -24.36% de población</li> </ol> </div>`)[0];
+                popup_de13eccccce119ec2f29ac2289b55bfa.setContent(html_fa3e0b3fe600f064e5e534f187c24ef9);
+            
+        
+
+        marker_ea74365a34b49b1181f1957ce02dd6aa.bindPopup(popup_de13eccccce119ec2f29ac2289b55bfa)
+        ;
+
+        
+    
+    
+                marker_ea74365a34b49b1181f1957ce02dd6aa.setIcon(icon_13fdcc2ebe06b6576c5e49c5be25816e);
+            
+    
+            var marker_ae7a86f1314a5922cd4dc68744adec96 = L.marker(
+                [41.795001388123005, 140.98817105529213],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_c2204250dc685053f5ce9fcee4bd4491 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#56be70",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_878e238157096c9b1e65de6b46867dd1 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_b52d1375f833dc20155e3e0b514b2606 = $(`<div id="html_b52d1375f833dc20155e3e0b514b2606" style="width: 100.0%; height: 100.0%;"> <h4>Oshima</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Matsumae-cho -39.84% de población<br> Hospital: Hakodate central general hospital 63.5 km <br> Universidad: Hakodate Otani College 65.2 km </li>  <li>Kikonai-cho -39% de población</li>  <li>Fukushima-cho -37.74% de población</li> </ol> </div>`)[0];
+                popup_878e238157096c9b1e65de6b46867dd1.setContent(html_b52d1375f833dc20155e3e0b514b2606);
+            
+        
+
+        marker_ae7a86f1314a5922cd4dc68744adec96.bindPopup(popup_878e238157096c9b1e65de6b46867dd1)
+        ;
+
+        
+    
+    
+                marker_ae7a86f1314a5922cd4dc68744adec96.setIcon(icon_c2204250dc685053f5ce9fcee4bd4491);
+            
+    
+            var marker_c3c06d01f1080621cd4382803ee19c2b = L.marker(
+                [41.89365169962565, 140.16125343187625],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_df348b86ea5c13338b251e01ada9199b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#beffd4",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfb0d7af613768bd28d5d196b34f11d4 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_cf34456178fe285fc94e6d78253f1f1d = $(`<div id="html_cf34456178fe285fc94e6d78253f1f1d" style="width: 100.0%; height: 100.0%;"> <h4>Hiyama</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Setana-cho -33.57% de población<br> Hospital: Date red cross hospital 84.6 km <br> Universidad: Muroran Institute of Technology 98.2 km </li>  <li>Otobe-cho -33.37% de población</li>  <li>Kaminokuni-cho -32.61% de población</li> </ol> </div>`)[0];
+                popup_bfb0d7af613768bd28d5d196b34f11d4.setContent(html_cf34456178fe285fc94e6d78253f1f1d);
+            
+        
+
+        marker_c3c06d01f1080621cd4382803ee19c2b.bindPopup(popup_bfb0d7af613768bd28d5d196b34f11d4)
+        ;
+
+        
+    
+    
+                marker_c3c06d01f1080621cd4382803ee19c2b.setIcon(icon_df348b86ea5c13338b251e01ada9199b);
+            
+    
+            var marker_b627f2cfa8e6017287bb23062bd3bded = L.marker(
+                [43.78161925168907, 142.37428213845274],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_24bf366eead7148fca33a6d67ee9d72d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#706ad8",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91f75e89d6142b988bcee4a0c2891fa1 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_5995d859e58c50145d7181ebf7f41635 = $(`<div id="html_5995d859e58c50145d7181ebf7f41635" style="width: 100.0%; height: 100.0%;"> <h4>Kamikawa</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Otoineppu-mura -39.8% de población<br> Hospital: Asahikawa medical care center 105.3 km <br> Universidad: Nayoro City University 43.6 km </li>  <li>Nakagawa-cho -35.5% de población</li>  <li>Aibetsu-cho -31.25% de población</li> </ol> </div>`)[0];
+                popup_91f75e89d6142b988bcee4a0c2891fa1.setContent(html_5995d859e58c50145d7181ebf7f41635);
+            
+        
+
+        marker_b627f2cfa8e6017287bb23062bd3bded.bindPopup(popup_91f75e89d6142b988bcee4a0c2891fa1)
+        ;
+
+        
+    
+    
+                marker_b627f2cfa8e6017287bb23062bd3bded.setIcon(icon_24bf366eead7148fca33a6d67ee9d72d);
+            
+    
+            var marker_3035afe57baf3e01477b9320bea8f095 = L.marker(
+                [43.95636355969225, 141.70414338778357],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_11b3cbefff8cc8ceec18d322dacc4c83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#b7b4f5",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5367a9a3d80dfdcfb2830409fef2a63 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_c9302b09aeb29c6ea7466f63b441119e = $(`<div id="html_c9302b09aeb29c6ea7466f63b441119e" style="width: 100.0%; height: 100.0%;"> <h4>Rumoi</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Mashike-cho -34.16% de población<br> Hospital: Sunagawa city medical center 50.2 km <br> Universidad: Takushoku University Hokkaido Junior College 41.9 km </li>  <li>Teshio-cho -32.94% de población</li>  <li>Obira-cho -31.07% de población</li> </ol> </div>`)[0];
+                popup_e5367a9a3d80dfdcfb2830409fef2a63.setContent(html_c9302b09aeb29c6ea7466f63b441119e);
+            
+        
+
+        marker_3035afe57baf3e01477b9320bea8f095.bindPopup(popup_e5367a9a3d80dfdcfb2830409fef2a63)
+        ;
+
+        
+    
+    
+                marker_3035afe57baf3e01477b9320bea8f095.setIcon(icon_11b3cbefff8cc8ceec18d322dacc4c83);
+            
+    
+            var marker_ba56b38744a61eb6dab3f888f7c0baba = L.marker(
+                [44.0352156632767, 144.2588478861494],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_80b9cfdd1ef0e09e9ea99bad9f3f1395 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#dc3ea6",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d779a9ddc014c33d511b93e6f7c5fcc5 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_3a21456ccf02c6a81d670167d0e5f40a = $(`<div id="html_3a21456ccf02c6a81d670167d0e5f40a" style="width: 100.0%; height: 100.0%;"> <h4>Okhotsk</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Tsubetsu-cho -33.16% de población<br> Hospital: Hokkaido prefectural kitami hospital 19.8 km <br> Universidad: Kitami Institute of Technology 19.2 km </li>  <li>Takinoue-cho -30.75% de población</li>  <li>Oketo-cho -27.97% de población</li> </ol> </div>`)[0];
+                popup_d779a9ddc014c33d511b93e6f7c5fcc5.setContent(html_3a21456ccf02c6a81d670167d0e5f40a);
+            
+        
+
+        marker_ba56b38744a61eb6dab3f888f7c0baba.bindPopup(popup_d779a9ddc014c33d511b93e6f7c5fcc5)
+        ;
+
+        
+    
+    
+                marker_ba56b38744a61eb6dab3f888f7c0baba.setIcon(icon_80b9cfdd1ef0e09e9ea99bad9f3f1395);
+            
+    
+            var marker_beb1c4f18b21c2c21ceeea1a5ccc07c8 = L.marker(
+                [42.934004107956504, 143.17638213449698],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_61941a708fdee8748a952c9995f35941 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#fcb448",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bcb19175d5aa2a86da032e6b0d446db = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_9226f69fed9465c58aa34428afeaac9f = $(`<div id="html_9226f69fed9465c58aa34428afeaac9f" style="width: 100.0%; height: 100.0%;"> <h4>Tokachi</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Hombetsu-cho -31.18% de población<br> Hospital: Hokkaido prefectural midorigaoka hospital 40.9 km <br> Universidad: Obihiro Otani Junior College 40.7 km </li>  <li>Hiroo-cho -30.13% de población</li>  <li>Urahoro-cho -29.39% de población</li> </ol> </div>`)[0];
+                popup_2bcb19175d5aa2a86da032e6b0d446db.setContent(html_9226f69fed9465c58aa34428afeaac9f);
+            
+        
+
+        marker_beb1c4f18b21c2c21ceeea1a5ccc07c8.bindPopup(popup_2bcb19175d5aa2a86da032e6b0d446db)
+        ;
+
+        
+    
+    
+                marker_beb1c4f18b21c2c21ceeea1a5ccc07c8.setIcon(icon_61941a708fdee8748a952c9995f35941);
+            
+    
+            var marker_8cf18fb9538d0f2a95b3ee2465868ad2 = L.marker(
+                [42.9825479007235, 144.3718363375226],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_14cb5babbb1c6ebb0d312f4b726f102d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#67c1f3",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_371add505b1458878f208a01e1fa4447 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_1df734506615f347586fe85632d011d4 = $(`<div id="html_1df734506615f347586fe85632d011d4" style="width: 100.0%; height: 100.0%;"> <h4>Kushiro</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Shiranuka-cho -28.82% de población<br> Hospital: Keiai hospital 67 km <br> Universidad: Kushiro Public University of Economics 30.5 km </li>  <li>Akkeshi-cho -26.05% de población</li>  <li>Teshikaga-cho -24.53% de población</li> </ol> </div>`)[0];
+                popup_371add505b1458878f208a01e1fa4447.setContent(html_1df734506615f347586fe85632d011d4);
+            
+        
+
+        marker_8cf18fb9538d0f2a95b3ee2465868ad2.bindPopup(popup_371add505b1458878f208a01e1fa4447)
+        ;
+
+        
+    
+    
+                marker_8cf18fb9538d0f2a95b3ee2465868ad2.setIcon(icon_14cb5babbb1c6ebb0d312f4b726f102d);
+            
+    
+            var marker_2738dffadba42a1de6e5278124e5736a = L.marker(
+                [43.348500337092474, 145.66281566995693],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_0a85eb8981a701982f5ee04c62b3ed11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#a5dfff",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ebaab35139839776b434cf27e723b510 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_12cce095304430a0ad6971a91a42aa05 = $(`<div id="html_12cce095304430a0ad6971a91a42aa05" style="width: 100.0%; height: 100.0%;"> <h4>Nemuro</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Rausu-cho -31.57% de población<br> Hospital: Hokkaido prefectural kitami hospital 109.8 km <br> Universidad: Japanese Red Cross Hokkaido College of Nursing 108.1 km </li>  <li>Nemuro-shi -27.4% de población</li>  <li>Betsukai-cho -15.97% de población</li> </ol> </div>`)[0];
+                popup_ebaab35139839776b434cf27e723b510.setContent(html_12cce095304430a0ad6971a91a42aa05);
+            
+        
+
+        marker_2738dffadba42a1de6e5278124e5736a.bindPopup(popup_ebaab35139839776b434cf27e723b510)
+        ;
+
+        
+    
+    
+                marker_2738dffadba42a1de6e5278124e5736a.setIcon(icon_0a85eb8981a701982f5ee04c62b3ed11);
+            
+    
+            var marker_da6061cdcd4b66705de2d46791756756 = L.marker(
+                [45.43657752052581, 141.68871254710336],
+                {
+}
+            ).addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+            var icon_6028f5c3f837a7e3167f4398477862d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "#c1ff72",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18bbd33451dbb7f20733c6694fb8f8cb = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_dbce4c792455739f944973729ef29b7c = $(`<div id="html_dbce4c792455739f944973729ef29b7c" style="width: 100.0%; height: 100.0%;"> <h4>Soya</h4>  <b>Localidades con mayor riesgo de desaparición</b>  <ol> <li>Rishiri-cho -31.74% de población<br> Hospital: Asahikawa medical care center 183 km <br> Universidad: Ikueikan University 49.1 km </li>  <li>Rishirifuji-cho -29.53% de población</li>  <li>Rebun-cho -29.21% de población</li> </ol> </div>`)[0];
+                popup_18bbd33451dbb7f20733c6694fb8f8cb.setContent(html_dbce4c792455739f944973729ef29b7c);
+            
+        
+
+        marker_da6061cdcd4b66705de2d46791756756.bindPopup(popup_18bbd33451dbb7f20733c6694fb8f8cb)
+        ;
+
+        
+    
+    
+                marker_da6061cdcd4b66705de2d46791756756.setIcon(icon_6028f5c3f837a7e3167f4398477862d0);
+            
+    
+            tile_layer_ce62f6a0ce94eabbdf650d1a129d70e3.addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+                marker_8a99287da123f030372659877f06f02b.setIcon(icon_d21f0936e877d67f1eb59d7c246142a2);
+            
+    
+                marker_a85f64d5625bc2d61e5228aec9f51743.setIcon(icon_7d648f78468e0197e40b45bbacc2783a);
+            
+    
+                marker_31b9648087ee992857ac4be0af825144.setIcon(icon_5ec111fd5c9907f3aaea586a40d9d61c);
+            
+    
+                marker_1cc702fd3e3f3c3010d98ac252ba1eb9.setIcon(icon_49cbc357c7d93e1a5b4814443b332650);
+            
+    
+                marker_ea74365a34b49b1181f1957ce02dd6aa.setIcon(icon_13fdcc2ebe06b6576c5e49c5be25816e);
+            
+    
+                marker_ae7a86f1314a5922cd4dc68744adec96.setIcon(icon_c2204250dc685053f5ce9fcee4bd4491);
+            
+    
+                marker_c3c06d01f1080621cd4382803ee19c2b.setIcon(icon_df348b86ea5c13338b251e01ada9199b);
+            
+    
+                marker_b627f2cfa8e6017287bb23062bd3bded.setIcon(icon_24bf366eead7148fca33a6d67ee9d72d);
+            
+    
+                marker_3035afe57baf3e01477b9320bea8f095.setIcon(icon_11b3cbefff8cc8ceec18d322dacc4c83);
+            
+    
+                marker_ba56b38744a61eb6dab3f888f7c0baba.setIcon(icon_80b9cfdd1ef0e09e9ea99bad9f3f1395);
+            
+    
+                marker_beb1c4f18b21c2c21ceeea1a5ccc07c8.setIcon(icon_61941a708fdee8748a952c9995f35941);
+            
+    
+                marker_8cf18fb9538d0f2a95b3ee2465868ad2.setIcon(icon_14cb5babbb1c6ebb0d312f4b726f102d);
+            
+    
+                marker_2738dffadba42a1de6e5278124e5736a.setIcon(icon_0a85eb8981a701982f5ee04c62b3ed11);
+            
+    
+                marker_da6061cdcd4b66705de2d46791756756.setIcon(icon_6028f5c3f837a7e3167f4398477862d0);
+            
+    
+            tile_layer_ce62f6a0ce94eabbdf650d1a129d70e3.addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+                marker_8a99287da123f030372659877f06f02b.setIcon(icon_d21f0936e877d67f1eb59d7c246142a2);
+            
+    
+                marker_a85f64d5625bc2d61e5228aec9f51743.setIcon(icon_7d648f78468e0197e40b45bbacc2783a);
+            
+    
+                marker_31b9648087ee992857ac4be0af825144.setIcon(icon_5ec111fd5c9907f3aaea586a40d9d61c);
+            
+    
+                marker_1cc702fd3e3f3c3010d98ac252ba1eb9.setIcon(icon_49cbc357c7d93e1a5b4814443b332650);
+            
+    
+                marker_ea74365a34b49b1181f1957ce02dd6aa.setIcon(icon_13fdcc2ebe06b6576c5e49c5be25816e);
+            
+    
+                marker_ae7a86f1314a5922cd4dc68744adec96.setIcon(icon_c2204250dc685053f5ce9fcee4bd4491);
+            
+    
+                marker_c3c06d01f1080621cd4382803ee19c2b.setIcon(icon_df348b86ea5c13338b251e01ada9199b);
+            
+    
+                marker_b627f2cfa8e6017287bb23062bd3bded.setIcon(icon_24bf366eead7148fca33a6d67ee9d72d);
+            
+    
+                marker_3035afe57baf3e01477b9320bea8f095.setIcon(icon_11b3cbefff8cc8ceec18d322dacc4c83);
+            
+    
+                marker_ba56b38744a61eb6dab3f888f7c0baba.setIcon(icon_80b9cfdd1ef0e09e9ea99bad9f3f1395);
+            
+    
+                marker_beb1c4f18b21c2c21ceeea1a5ccc07c8.setIcon(icon_61941a708fdee8748a952c9995f35941);
+            
+    
+                marker_8cf18fb9538d0f2a95b3ee2465868ad2.setIcon(icon_14cb5babbb1c6ebb0d312f4b726f102d);
+            
+    
+                marker_2738dffadba42a1de6e5278124e5736a.setIcon(icon_0a85eb8981a701982f5ee04c62b3ed11);
+            
+    
+                marker_da6061cdcd4b66705de2d46791756756.setIcon(icon_6028f5c3f837a7e3167f4398477862d0);
+            
+    
+            tile_layer_ce62f6a0ce94eabbdf650d1a129d70e3.addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+                marker_8a99287da123f030372659877f06f02b.setIcon(icon_d21f0936e877d67f1eb59d7c246142a2);
+            
+    
+                marker_a85f64d5625bc2d61e5228aec9f51743.setIcon(icon_7d648f78468e0197e40b45bbacc2783a);
+            
+    
+                marker_31b9648087ee992857ac4be0af825144.setIcon(icon_5ec111fd5c9907f3aaea586a40d9d61c);
+            
+    
+                marker_1cc702fd3e3f3c3010d98ac252ba1eb9.setIcon(icon_49cbc357c7d93e1a5b4814443b332650);
+            
+    
+                marker_ea74365a34b49b1181f1957ce02dd6aa.setIcon(icon_13fdcc2ebe06b6576c5e49c5be25816e);
+            
+    
+                marker_ae7a86f1314a5922cd4dc68744adec96.setIcon(icon_c2204250dc685053f5ce9fcee4bd4491);
+            
+    
+                marker_c3c06d01f1080621cd4382803ee19c2b.setIcon(icon_df348b86ea5c13338b251e01ada9199b);
+            
+    
+                marker_b627f2cfa8e6017287bb23062bd3bded.setIcon(icon_24bf366eead7148fca33a6d67ee9d72d);
+            
+    
+                marker_3035afe57baf3e01477b9320bea8f095.setIcon(icon_11b3cbefff8cc8ceec18d322dacc4c83);
+            
+    
+                marker_ba56b38744a61eb6dab3f888f7c0baba.setIcon(icon_80b9cfdd1ef0e09e9ea99bad9f3f1395);
+            
+    
+                marker_beb1c4f18b21c2c21ceeea1a5ccc07c8.setIcon(icon_61941a708fdee8748a952c9995f35941);
+            
+    
+                marker_8cf18fb9538d0f2a95b3ee2465868ad2.setIcon(icon_14cb5babbb1c6ebb0d312f4b726f102d);
+            
+    
+                marker_2738dffadba42a1de6e5278124e5736a.setIcon(icon_0a85eb8981a701982f5ee04c62b3ed11);
+            
+    
+                marker_da6061cdcd4b66705de2d46791756756.setIcon(icon_6028f5c3f837a7e3167f4398477862d0);
+            
+    
+            tile_layer_ce62f6a0ce94eabbdf650d1a129d70e3.addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+                marker_8a99287da123f030372659877f06f02b.setIcon(icon_d21f0936e877d67f1eb59d7c246142a2);
+            
+    
+                marker_a85f64d5625bc2d61e5228aec9f51743.setIcon(icon_7d648f78468e0197e40b45bbacc2783a);
+            
+    
+                marker_31b9648087ee992857ac4be0af825144.setIcon(icon_5ec111fd5c9907f3aaea586a40d9d61c);
+            
+    
+                marker_1cc702fd3e3f3c3010d98ac252ba1eb9.setIcon(icon_49cbc357c7d93e1a5b4814443b332650);
+            
+    
+                marker_ea74365a34b49b1181f1957ce02dd6aa.setIcon(icon_13fdcc2ebe06b6576c5e49c5be25816e);
+            
+    
+                marker_ae7a86f1314a5922cd4dc68744adec96.setIcon(icon_c2204250dc685053f5ce9fcee4bd4491);
+            
+    
+                marker_c3c06d01f1080621cd4382803ee19c2b.setIcon(icon_df348b86ea5c13338b251e01ada9199b);
+            
+    
+                marker_b627f2cfa8e6017287bb23062bd3bded.setIcon(icon_24bf366eead7148fca33a6d67ee9d72d);
+            
+    
+                marker_3035afe57baf3e01477b9320bea8f095.setIcon(icon_11b3cbefff8cc8ceec18d322dacc4c83);
+            
+    
+                marker_ba56b38744a61eb6dab3f888f7c0baba.setIcon(icon_80b9cfdd1ef0e09e9ea99bad9f3f1395);
+            
+    
+                marker_beb1c4f18b21c2c21ceeea1a5ccc07c8.setIcon(icon_61941a708fdee8748a952c9995f35941);
+            
+    
+                marker_8cf18fb9538d0f2a95b3ee2465868ad2.setIcon(icon_14cb5babbb1c6ebb0d312f4b726f102d);
+            
+    
+                marker_2738dffadba42a1de6e5278124e5736a.setIcon(icon_0a85eb8981a701982f5ee04c62b3ed11);
+            
+    
+                marker_da6061cdcd4b66705de2d46791756756.setIcon(icon_6028f5c3f837a7e3167f4398477862d0);
+            
+    
+            tile_layer_ce62f6a0ce94eabbdf650d1a129d70e3.addTo(map_fc63dd94ea6d8c6dac24fd377e055f7a);
+        
+    
+                marker_8a99287da123f030372659877f06f02b.setIcon(icon_d21f0936e877d67f1eb59d7c246142a2);
+            
+    
+                marker_a85f64d5625bc2d61e5228aec9f51743.setIcon(icon_7d648f78468e0197e40b45bbacc2783a);
+            
+    
+                marker_31b9648087ee992857ac4be0af825144.setIcon(icon_5ec111fd5c9907f3aaea586a40d9d61c);
+            
+    
+                marker_1cc702fd3e3f3c3010d98ac252ba1eb9.setIcon(icon_49cbc357c7d93e1a5b4814443b332650);
+            
+    
+                marker_ea74365a34b49b1181f1957ce02dd6aa.setIcon(icon_13fdcc2ebe06b6576c5e49c5be25816e);
+            
+    
+                marker_ae7a86f1314a5922cd4dc68744adec96.setIcon(icon_c2204250dc685053f5ce9fcee4bd4491);
+            
+    
+                marker_c3c06d01f1080621cd4382803ee19c2b.setIcon(icon_df348b86ea5c13338b251e01ada9199b);
+            
+    
+                marker_b627f2cfa8e6017287bb23062bd3bded.setIcon(icon_24bf366eead7148fca33a6d67ee9d72d);
+            
+    
+                marker_3035afe57baf3e01477b9320bea8f095.setIcon(icon_11b3cbefff8cc8ceec18d322dacc4c83);
+            
+    
+                marker_ba56b38744a61eb6dab3f888f7c0baba.setIcon(icon_80b9cfdd1ef0e09e9ea99bad9f3f1395);
+            
+    
+                marker_beb1c4f18b21c2c21ceeea1a5ccc07c8.setIcon(icon_61941a708fdee8748a952c9995f35941);
+            
+    
+                marker_8cf18fb9538d0f2a95b3ee2465868ad2.setIcon(icon_14cb5babbb1c6ebb0d312f4b726f102d);
+            
+    
+                marker_2738dffadba42a1de6e5278124e5736a.setIcon(icon_0a85eb8981a701982f5ee04c62b3ed11);
+            
+    
+                marker_da6061cdcd4b66705de2d46791756756.setIcon(icon_6028f5c3f837a7e3167f4398477862d0);
+            
+</script>
+</html>
